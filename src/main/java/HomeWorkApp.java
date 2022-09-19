@@ -16,33 +16,25 @@ public class HomeWorkApp {
     }
 
     public static void printThreeWords() {
-
         System.out.println("Orange");
         System.out.println("Banana");
         System.out.println("Apple");
     }
 
-    public static void checkSumSign(int per1, int per2) {
-        int a = per1;
-        int b = per2;
+    public static void checkSumSign(int a, int b) {
         System.out.println("a = " + a + ", b = " + b);
-        if ((a + b) >= 0) System.out.println("Сумма положительная");
-        else System.out.println("Сумма отрицательная");
+        System.out.println(((a + b) >= 0) ? "Сумма положительная" : "Сумма отрицательная");
     }
 
-    public static void printColor(int per) {
-        int value = per;
+    public static void printColor(int value) {
         System.out.println("value = " + value);
         if (value <= 0) System.out.println("Красный");
         else if (value <= 100) System.out.println("Желтый");
         else System.out.println("Зеленый");
     }
 
-    public static void compareNumbers(int per1, int per2) {
-        int a = per1;
-        int b = per2;
+    public static void compareNumbers(int a, int b) {
         System.out.println("a = " + a + ", b = " + b);
-        if (a >= b) System.out.println("a >= b");
-            else System.out.println("a < b");
+        System.out.println( (a >= b) ? "a >= b" : "a < b");
     }
 }
