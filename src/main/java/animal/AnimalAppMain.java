@@ -11,10 +11,6 @@ public class AnimalAppMain {
                 + ", cats: " + Cat.catCounter
                 + ", dogs: " + Dog.dogCounter);
 
-//        System.out.println("dogs1: " + dogRax.dogCounter
-//                + ", dogs2: " + dogWONaim.dogCounter
-//                + ", dogs2: " + dogWONaim.animalCounter);
-
         catBarsic.run(100);
         catBarsic.swim(9);
         catPushok.run(0);
