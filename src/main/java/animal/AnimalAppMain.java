@@ -5,11 +5,10 @@ public class AnimalAppMain {
         Cat catBarsic = new Cat("Barsic");
         Cat catPushok = new Cat("Pushok");
         Dog dogRax = new Dog("Rax");
-        Animal dogWONaim = new Dog("Dog");
 
-        System.out.println("Animals: " + Animal.animalCounter
-                + ", cats: " + Cat.catCounter
-                + ", dogs: " + Dog.dogCounter);
+        System.out.println("Animals: " + Animal.counter
+                + ", cats: " + Cat.counter
+                + ", dogs: " + Dog.counter);
 
         catBarsic.run(100);
         catBarsic.swim(9);
@@ -20,7 +19,6 @@ public class AnimalAppMain {
         dogRax.swim(10);
         dogRax.swim(20);
         dogRax.run(-10);
-        dogRax.run(-10);
-        dogWONaim.run(1000);
+        dogRax.run(0);
     }
 }

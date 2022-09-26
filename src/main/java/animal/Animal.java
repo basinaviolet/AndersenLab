@@ -5,15 +5,15 @@ package animal;
  */
 public class Animal {
     private String name;
-    public static int animalCounter;
+    public static int counter;
 
     public Animal() {
-        animalCounter++;
+        counter++;
     }
 
     public Animal(String name) {
         this.name = name;
-        animalCounter++;
+        counter++;
     }
 
     public void run(int distance){

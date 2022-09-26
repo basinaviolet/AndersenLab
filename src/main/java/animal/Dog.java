@@ -3,11 +3,11 @@ package animal;
 public class Dog extends Animal{
     final int LIMIT_RUN = 500;
     final int LIMIT_SWIM = 10;
-    public static int dogCounter;
+    public static int counter;
 
     public Dog(String name) {
               super(name);
-        dogCounter++;
+        counter++;
     }
 
     @Override

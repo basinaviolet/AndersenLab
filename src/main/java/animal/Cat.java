@@ -2,11 +2,11 @@ package animal;
 
 public class Cat extends Animal{
     final  int LIMIT_RUN = 200;
-    public static int catCounter;
+    public static int counter;
 
     public Cat(String name) {
         super(name);
-        catCounter++;
+        counter++;
     }
 
     @Override
