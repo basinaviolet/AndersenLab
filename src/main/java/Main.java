@@ -31,12 +31,14 @@ public class Main {
         System.out.printf("is the weight of appleBox2 adn orangeBox2 equal: %b %n", appleBox2.compare(orangeBox2));
 
         //pour from box and get there new weight
+        System.out.println("pouring from appleBox1 to appleBox2");
         appleBox1.pourBox(appleBox2);
         System.out.printf("appleBox1 weight = %.1f %n", appleBox1.getWeight());
         System.out.printf("appleBox2 weight = %.1f %n", appleBox2.getWeight());
 
-        appleBox1.pourBox(orangeBox1);
-        System.out.printf("appleBox1 weight = %.1f %n", appleBox1.getWeight());
+        System.out.println("pouring from appleBox2 to orangeBox1");
+        appleBox2.pourBox(orangeBox1);
+        System.out.printf("appleBox2 weight = %.1f %n", appleBox2.getWeight());
         System.out.printf("orangeBox1 weight = %.1f %n", orangeBox1.getWeight());
     }
 

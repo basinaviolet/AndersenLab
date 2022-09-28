@@ -64,19 +64,19 @@ public class Box<T> {
         return 0;
     }
 
-    /* pouring fruits from the another box to this box
-     * the method accepts a box from which fruits are poured
+    /* pouring fruits from this box to the another one
+     * the method accepts a box to which fruits are poured
      * return true if all ok;
      * return false if the type of fruit doesn`t match
      */
     public boolean pourBox(Box boxWithFruit) {
-        for (int i = 0; i < boxWithFruit.fruitSet.size(); i++) {
-            if (!this.addFruit((T) boxWithFruit.fruitSet.get(i))) {
+        for (int i = 0; i < this.fruitSet.size(); i++) {
+            if (!boxWithFruit.addFruit((T) this.fruitSet.get(i))) {
                 System.out.println("Error: you are trying to pour fruit into a box with other kind of fruit");
                 return false;
             }
         }
-        return boxWithFruit.delFruit();
+        return this.delFruit();
     }
 
 }
