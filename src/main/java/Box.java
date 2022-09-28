@@ -45,7 +45,7 @@ public class Box<T> {
      * return false if weight is different
      */
     public boolean compare(Box boxForCompare) {
-        return (boxForCompare.getWeight() == this.getWeight()) ? true : false;
+        return boxForCompare.getWeight() == this.getWeight();
     }
 
     public float getWeight() {
