@@ -22,7 +22,7 @@ public class Box<T> {
             }
         } else {
             fruitSet.add(fruitItem);
-            return false;
+            return true;
         }
     }
 

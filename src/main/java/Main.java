@@ -5,17 +5,17 @@ public class Main {
         appleBox1.addFruit(new Apple("apple2"));
         appleBox1.addFruit(new Orange("orange"));
 
-        Box appleBox2 = new Box();
+        Box<Apple> appleBox2 = new Box();
         appleBox2.addFruit(new Apple("apple3"));
         appleBox2.addFruit(new Apple("apple4"));
         appleBox2.addFruit(new Apple("apple5"));
 
-        Box orangeBox1 = new Box();
+        Box<Orange> orangeBox1 = new Box();
         orangeBox1.addFruit(new Orange("orange1"));
         orangeBox1.addFruit(new Orange("orange2"));
         orangeBox1.addFruit(new Orange("orange3"));
 
-        Box orangeBox2 = new Box();
+        Box<Orange> orangeBox2 = new Box();
         orangeBox2.addFruit(new Orange("orange4"));
         orangeBox2.addFruit(new Orange("orange5"));
 
