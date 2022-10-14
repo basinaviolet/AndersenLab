@@ -1,0 +1,985 @@
+{
+  "id": "7c85db68-d921-4169-921a-03a5f7ca3c12",
+  "version": "2.0",
+  "name": "aliexpress",
+  "url": "https://best.aliexpress.com/",
+  "tests": [{
+    "id": "36118809-7e84-49a8-bb44-2eb3f1a53194",
+    "name": "aliSearch",
+    "commands": [{
+      "id": "2ecf4e6e-3e3a-4d6a-adc8-d39ac25e5ba3",
+      "comment": "",
+      "command": "open",
+      "target": "https://best.aliexpress.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "03674e56-1eda-4e57-993d-db2651f75db9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1320x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "16e0ae99-63f1-4d58-9d82-066a9195838b",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.logo-base",
+      "targets": [
+        ["css=.logo-base", "css:finder"],
+        ["xpath=//div[@id='header']/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div[2]/a/span", "xpath:position"]
+      ],
+      "value": "AliExpress"
+    }, {
+      "id": "0555e652-b8fa-49ad-a3b4-c87415973dc2",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=switcher-info",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5c8ddd19-5a5f-4c76-b0fa-c1114dbe9499",
+      "comment": "",
+      "command": "click",
+      "target": "id=switcher-info",
+      "targets": [
+        ["id=switcher-info", "id"],
+        ["css=#switcher-info", "css:finder"],
+        ["xpath=//a[@id='switcher-info']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0)')]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ebf1e351-11bc-4681-aa7e-21951b1829da",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.switcher-common",
+      "targets": [
+        ["css=.switcher-common", "css:finder"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "1d76dea1-9960-4714-9ab4-86cc9c4efc5f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='nav-global']/div[4]/div/div/div/div/div/a",
+      "targets": [
+        ["linkText=Poland", "linkText"],
+        ["css=.address-select-trigger-hover", "css:finder"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Poland')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2178533a-31aa-46d7-af49-0b055f097c50",
+      "comment": "",
+      "command": "click",
+      "target": "css=.address-select:nth-child(4) .filter-input",
+      "targets": [
+        ["css=.address-select:nth-child(4) .filter-input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37216ae0-1104-4b21-9087-5862d2d0deca",
+      "comment": "",
+      "command": "type",
+      "target": "css=.address-select:nth-child(4) .filter-input",
+      "targets": [
+        ["css=.address-select:nth-child(4) .filter-input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "pol"
+    }, {
+      "id": "04eaca7f-343c-4a40-8e17-5fcdbcc3748a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.address-select-selected > .css_flag",
+      "targets": [
+        ["css=.address-select-selected > .css_flag", "css:finder"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div/div/div/ul/li[170]/span", "xpath:idRelative"],
+        ["xpath=//li[170]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b244c6c4-9124-440e-b018-5f7a5cefba80",
+      "comment": "",
+      "command": "click",
+      "target": "css=.language-selector > .select-item",
+      "targets": [
+        ["css=.language-selector > .select-item", "css:finder"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e733e2df-37e2-4584-8483-edbbb4296d46",
+      "comment": "",
+      "command": "click",
+      "target": "css=.language-selector .search-currency",
+      "targets": [
+        ["css=.language-selector .search-currency", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7114c249-62dd-4634-bfae-7fdfff57fdbb",
+      "comment": "",
+      "command": "type",
+      "target": "css=.language-selector .search-currency",
+      "targets": [
+        ["css=.language-selector .search-currency", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "eng"
+    }, {
+      "id": "15e426d9-17fe-4c0d-90b9-c7a193120a55",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) > .switcher-item",
+      "targets": [
+        ["css=li:nth-child(1) > .switcher-item", "css:finder"],
+        ["xpath=(//a[contains(text(),'English')])[2]", "xpath:link"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[2]/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;')])[4]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "55081dbd-bea9-42d8-b4aa-706903bda48f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.switcher-currency .select-item",
+      "targets": [
+        ["css=.switcher-currency .select-item", "css:finder"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[3]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div[3]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'EUR ( Euro )')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a94beb82-1474-48fa-9838-23f833681224",
+      "comment": "",
+      "command": "click",
+      "target": "css=.switcher-currency .search-currency",
+      "targets": [
+        ["css=.switcher-currency .search-currency", "css:finder"],
+        ["xpath=(//input[@type='text'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9e629a8-0459-437f-8d8b-ce9ed30b93ff",
+      "comment": "",
+      "command": "type",
+      "target": "css=.switcher-currency .search-currency",
+      "targets": [
+        ["css=.switcher-currency .search-currency", "css:finder"],
+        ["xpath=(//input[@type='text'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "eur"
+    }, {
+      "id": "f38a1e86-d18f-43ca-b283-617f06c77c1e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.switcher-currency li:nth-child(3) > a",
+      "targets": [
+        ["css=.switcher-currency li:nth-child(3) > a", "css:finder"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[3]/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;')])[24]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/div[3]/div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "79ade0df-6b00-444a-8e72-651e96a9a626",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-button",
+      "targets": [
+        ["css=.ui-button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[4]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ab436f5a-4c53-40a7-b85f-7aab6715a4c9",
+      "comment": "",
+      "command": "click",
+      "target": "id=search-key",
+      "targets": [
+        ["id=search-key", "id"],
+        ["name=SearchText", "name"],
+        ["css=#search-key", "css:finder"],
+        ["xpath=//input[@id='search-key']", "xpath:attributes"],
+        ["xpath=//form[@id='form-searchbar']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0bff5b3d-3ef2-43d6-8c7d-9e8a5261acee",
+      "comment": "",
+      "command": "type",
+      "target": "id=search-key",
+      "targets": [
+        ["id=search-key", "id"],
+        ["name=SearchText", "name"],
+        ["css=#search-key", "css:finder"],
+        ["xpath=//input[@id='search-key']", "xpath:attributes"],
+        ["xpath=//form[@id='form-searchbar']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "650ml infuser water bottle plastic lemon kettle"
+    }, {
+      "id": "1c6b6b56-c8d7-4b87-9d7b-c942ac2576b8",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=search-key",
+      "targets": [
+        ["id=search-key", "id"],
+        ["name=SearchText", "name"],
+        ["css=#search-key", "css:finder"],
+        ["xpath=//input[@id='search-key']", "xpath:attributes"],
+        ["xpath=//form[@id='form-searchbar']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "7105b797-bbb0-46bb-b633-98a7e6c99391",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//h1[contains(.,'650ml Infuser Water Bottle Plastic Fruit Infusion Kids Drink Outdoor Sports Bottle Juice Lemon Portable Kettle')]",
+      "targets": [
+        ["css=.card--container--2h3RcUB:nth-child(4) .card--titleText--1Mgo0PW", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div[2]/div[3]/a[4]/div[2]/div/h1", "xpath:idRelative"],
+        ["xpath=//a[4]/div[2]/div/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'650ml Infuser Water Bottle Plastic Fruit Infusion Kids Drink Outdoor Sports Bottle Juice Lemon Portable Kettle')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "09fa513a-44ed-43e5-9165-93f587cb5e98",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//h1[contains(.,'650ml Infuser Water Bottle Plastic Fruit Infusion Kids Drink Outdoor Sports Bottle Juice Lemon Portable Kettle')]",
+      "targets": [
+        ["css=.card--container--2h3RcUB:nth-child(2) .card--titleText--1Mgo0PW", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div[2]/div[3]/a[2]/div[2]/div/h1", "xpath:idRelative"],
+        ["xpath=//a[2]/div[2]/div/h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'650ml Infuser Water Bottle Plastic Fruit Infusion Kids Drink Outdoor Sports Bottle Juice Lemon Portable Kettle')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4912",
+      "windowTimeout": 2000
+    }, {
+      "id": "b4d749dd-9112-44d7-81a3-5608a4994c30",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "936a4920-c30c-4795-b565-d661d6a890d5",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win4912}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a4a33dfb-3a40-44eb-9eb5-78986af5e3ef",
+      "comment": "",
+      "command": "click",
+      "target": "css=.selected img",
+      "targets": [
+        ["css=.selected img", "css:finder"],
+        ["xpath=//img[@alt='green']", "xpath:img"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div[10]/div/div/ul/li[7]/div/img", "xpath:idRelative"],
+        ["xpath=//li[7]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "46f9b295-8d3f-4de1-b619-3897666ec9a0",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,79)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "738ab27b-bc25-4165-a9bc-402f81959973",
+      "comment": "",
+      "command": "click",
+      "target": "css=.addcart-wrap:nth-child(2) > .next-btn",
+      "targets": [
+        ["css=.addcart-wrap:nth-child(2) > .next-btn", "css:finder"],
+        ["xpath=(//button[@type='button'])[7]", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div[2]/div/div[2]/div[15]/span[2]/button", "xpath:idRelative"],
+        ["xpath=//span[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Add to Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d9e2afc0-afb2-4037-b3ab-75f1e7508ae9",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.next-btn-secondary",
+      "targets": [
+        ["css=.next-btn-secondary", "css:finder"],
+        ["xpath=(//button[@type='button'])[11]", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue Shopping')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cdb30348-7a4e-460b-aff9-35b450662101",
+      "comment": "",
+      "command": "click",
+      "target": "css=.next-btn-secondary",
+      "targets": [
+        ["css=.next-btn-secondary", "css:finder"],
+        ["xpath=(//button[@type='button'])[11]", "xpath:attributes"],
+        ["xpath=//div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Continue Shopping')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc5fb361-8f7c-4b9f-a2b2-2cc573109c3e",
+      "comment": "",
+      "command": "click",
+      "target": "id=right-cart-num",
+      "targets": [
+        ["id=right-cart-num", "id"],
+        ["css=#right-cart-num", "css:finder"],
+        ["xpath=//span[@id='right-cart-num']", "xpath:attributes"],
+        ["xpath=//div[@id='header']/div/div[2]/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[6]/div/div[2]/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'0')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c98e8ecc-d78c-4535-901a-92e316bdff4c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=650ml Infuser Water Bottle Plastic Fruit Infusion Kids Drink Outdoor Sports Bottle Juice Lemon Portable Kettle",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5233761f-7ec1-4f21-a98e-7367e47df8d2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a7b572dc-2d3c-403b-b6ad-3eed52c09881",
+    "name": "aliKitchenError",
+    "commands": [{
+      "id": "a870d42d-50a6-45f0-b159-eef9bc0be793",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9da50a70-a674-497f-808a-1b71307723fc",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1220x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "451c8b98-82e4-4424-bcdf-f1625bf699a0",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0fb86bef-5ff2-4119-838b-1879b0dbcb06",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.logo-base",
+      "targets": [
+        ["css=.logo-base", "css:finder"],
+        ["xpath=//div[@id='header']/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div[2]/a/span", "xpath:position"]
+      ],
+      "value": "AliExpress"
+    }, {
+      "id": "ddc0b0e4-9cd8-4a88-abeb-a8d409a6621e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=switcher-info",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "472c3178-57ed-44ca-bb60-c582e0c4a26e",
+      "comment": "",
+      "command": "click",
+      "target": "id=switcher-info",
+      "targets": [
+        ["id=switcher-info", "id"],
+        ["css=#switcher-info", "css:finder"],
+        ["xpath=//a[@id='switcher-info']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0)')]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d97408e9-b6f0-45f1-b9da-7d1e0733fde7",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.switcher-common",
+      "targets": [
+        ["css=.switcher-common", "css:finder"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "47d4e727-9ce1-41b5-adbf-91bd77ced415",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='nav-global']/div[4]/div/div/div/div/div/a",
+      "targets": [
+        ["linkText=Poland", "linkText"],
+        ["css=.address-select-trigger-hover", "css:finder"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Poland')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "702d496f-538b-4f43-92a6-63733582df8d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.address-select:nth-child(4) .filter-input",
+      "targets": [
+        ["css=.address-select:nth-child(4) .filter-input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45ed7f91-afaf-457c-8e70-a9923c3c7854",
+      "comment": "",
+      "command": "type",
+      "target": "css=.address-select:nth-child(4) .filter-input",
+      "targets": [
+        ["css=.address-select:nth-child(4) .filter-input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "pol"
+    }, {
+      "id": "0b0d4858-4eba-466a-a427-924163dfe723",
+      "comment": "",
+      "command": "click",
+      "target": "css=.address-select-selected > .css_flag",
+      "targets": [
+        ["css=.address-select-selected > .css_flag", "css:finder"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div/div/div/ul/li[170]/span", "xpath:idRelative"],
+        ["xpath=//li[170]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63145969-1608-4608-816c-08f0ea2614aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=.language-selector > .select-item",
+      "targets": [
+        ["css=.language-selector > .select-item", "css:finder"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b3da6ef-fbf7-45e4-ba65-69ca60726ece",
+      "comment": "",
+      "command": "click",
+      "target": "css=.language-selector .search-currency",
+      "targets": [
+        ["css=.language-selector .search-currency", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ee50572d-c962-4914-b1b0-1c3f3a8e987b",
+      "comment": "",
+      "command": "type",
+      "target": "css=.language-selector .search-currency",
+      "targets": [
+        ["css=.language-selector .search-currency", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "eng"
+    }, {
+      "id": "342ee408-c89d-4f9b-8db4-dde52d903048",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) > .switcher-item",
+      "targets": [
+        ["css=li:nth-child(1) > .switcher-item", "css:finder"],
+        ["xpath=(//a[contains(text(),'English')])[2]", "xpath:link"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[2]/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;')])[4]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "53c0191d-9775-418e-be66-2f3a6f15b298",
+      "comment": "",
+      "command": "click",
+      "target": "css=.switcher-currency .select-item",
+      "targets": [
+        ["css=.switcher-currency .select-item", "css:finder"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[3]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div[3]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'EUR ( Euro )')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d2809e09-7afe-43c0-b413-0b4761a84e9a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.switcher-currency .search-currency",
+      "targets": [
+        ["css=.switcher-currency .search-currency", "css:finder"],
+        ["xpath=(//input[@type='text'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5159af1-6dbd-462a-9009-0dbdeacf94e1",
+      "comment": "",
+      "command": "type",
+      "target": "css=.switcher-currency .search-currency",
+      "targets": [
+        ["css=.switcher-currency .search-currency", "css:finder"],
+        ["xpath=(//input[@type='text'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "eur"
+    }, {
+      "id": "9a0fe46f-7adc-40b0-b432-384ef28ed9fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.switcher-currency li:nth-child(3) > a",
+      "targets": [
+        ["css=.switcher-currency li:nth-child(3) > a", "css:finder"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[3]/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;')])[24]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/div[3]/div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1a727ecd-cb2b-4ec0-8589-ea9ddf46b86b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-button",
+      "targets": [
+        ["css=.ui-button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[4]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "753ced04-a963-4fd7-936d-43b46eb80feb",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.cl-item-garden > .cate-name > span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f399e5f3-f724-48db-9b45-ef1ba21c7d2e",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.cl-item-garden > .cate-name a:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Home')])[4]", "xpath:link"],
+        ["xpath=//div[@id='home-firstscreen']/div[2]/div/div[2]/div/div[2]/dl[7]/dt/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '//www.aliexpress.com/category/15/home-garden.html?spm=a2g0o.best.107.1.292b2c25I2unqP')]", "xpath:href"],
+        ["xpath=//dl[7]/dt/span/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "944b8baa-6bbc-4613-b526-c578b5fd0d83",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Categories",
+      "targets": [
+        ["linkText=Categories", "linkText"],
+        ["css=.categories-content-title > a", "css:finder"],
+        ["xpath=//div[@id='home-firstscreen']/div[2]/div/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '//www.aliexpress.com/all-wholesale-products.html')]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Categories')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0f7064f-9939-45b1-9d26-63c53636ecaf",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.cl-item-garden > .cate-name a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'Home')]", "xpath:link"],
+        ["xpath=//div[@id='home-firstscreen']/div[2]/div/div[2]/div/div[2]/dl[7]/dt/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '//www.aliexpress.com/category/15/home-garden.html')]", "xpath:href"],
+        ["xpath=//dl[7]/dt/span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d5d0b01f-7de2-40ab-9dd3-90692706d1f2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Home",
+      "targets": [
+        ["linkText=Home", "linkText"],
+        ["css=.cl-item-garden > .cate-name a:nth-child(1)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Home')])[4]", "xpath:link"],
+        ["xpath=//div[@id='home-firstscreen']/div[2]/div/div[2]/div/div[2]/dl[7]/dt/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '//www.aliexpress.com/category/15/home-garden.html?spm=a2g0o.best.107.1.292b2c2566OFjf')]", "xpath:href"],
+        ["xpath=//dl[7]/dt/span/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8c66edd6-dce4-47f5-9fed-0aa7f072ecfc",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Kitchen,Dining & Bar",
+      "targets": [
+        ["linkText=Festive & Party Supplies", "linkText"],
+        ["css=li:nth-child(9) > .category--link--1pMPE_T", "css:finder"],
+        ["xpath=//a[contains(text(),'Festive & Party Supplies')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/ul/li[2]/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.aliexpress.com/premium/category/15.html?SearchText=&catId=100002992')]", "xpath:href"],
+        ["xpath=//li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Festive & Party Supplies')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21fe1056-a983-4567-8f09-cff17dc3fc81",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Kitchen,Dining & Bar",
+      "targets": [
+        ["linkText=Kitchen,Dining & Bar", "linkText"],
+        ["css=li:nth-child(7) > .category--link--1pMPE_T", "css:finder"],
+        ["xpath=//a[contains(text(),'Kitchen,Dining & Bar')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div/div/div/div[2]/div/div/ul/li[2]/ul/li[7]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.aliexpress.com/premium/category/15.html?spm=a2g0o.productlist.0.0.75e8129c1A8MUt&SearchText=&catId=200002086')]", "xpath:href"],
+        ["xpath=//li[2]/ul/li[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Kitchen,Dining & Bar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9da41162-c444-411f-9318-9aea68fa5630",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Home & Garden",
+      "targets": [
+        ["linkText=Home & Garden", "linkText"],
+        ["css=span:nth-child(2) > .breadcrumb--title--2AjaUyc", "css:finder"],
+        ["xpath=//a[contains(text(),'Home & Garden')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div/div[2]/div/div/div/span[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '//www.aliexpress.com/category/15/home-garden.html?spm=a2g0o.productlist.breadcrumb_navigation.2.5fa4129cdlptNL')]", "xpath:href"],
+        ["xpath=//span[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Home & Garden')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0574cb27-218b-416d-b78e-e20b7b84bc5b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Home & Garden",
+      "targets": [],
+      "value": "Home & Garden"
+    }, {
+      "id": "797a71e9-02ed-4103-a5f7-0ca42aa607e3",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.comet-breadcrumb-link > span",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db7d1497-9f31-44a4-893c-a52f1104a646",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.comet-breadcrumb-link > span",
+      "targets": [],
+      "value": "Kitchen,Dining & Bar"
+    }]
+  }, {
+    "id": "83a68a0a-2f49-430e-bce2-1193cb19be29",
+    "name": "aliSelectParameters",
+    "commands": [{
+      "id": "58c4eff6-ae35-499f-919b-7af00d1e7592",
+      "comment": "",
+      "command": "open",
+      "target": "https://best.aliexpress.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "776447ca-0e84-4ae0-8f18-48a80522ec87",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1320x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f73dd1dc-5082-4bfe-a878-211da1e75c77",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.logo-base",
+      "targets": [
+        ["css=.logo-base", "css:finder"],
+        ["xpath=//div[@id='header']/div/div/div[2]/a/span", "xpath:idRelative"],
+        ["xpath=//div[9]/div/div/div[2]/a/span", "xpath:position"]
+      ],
+      "value": "AliExpress"
+    }, {
+      "id": "e2a27c07-908b-46ab-8f3e-bf6d0d5deefc",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=switcher-info",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e90bd14a-d5a0-4e73-864f-56a20e783c3f",
+      "comment": "",
+      "command": "click",
+      "target": "id=switcher-info",
+      "targets": [
+        ["id=switcher-info", "id"],
+        ["css=#switcher-info", "css:finder"],
+        ["xpath=//a[@id='switcher-info']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'javascript:void(0)')]", "xpath:href"],
+        ["xpath=//div[4]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1d66877-f87b-411d-95e0-4471c808dda6",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "css=.switcher-common",
+      "targets": [
+        ["css=.switcher-common", "css:finder"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div", "xpath:position"]
+      ],
+      "value": "30000"
+    }, {
+      "id": "bd110a48-23f1-438c-b10e-9887f6346908",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='nav-global']/div[4]/div/div/div/div/div/a",
+      "targets": [
+        ["linkText=Poland", "linkText"],
+        ["css=.address-select-trigger-hover", "css:finder"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '#')]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Poland')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a245bd7-7d90-4946-a441-b595cc3c89f0",
+      "comment": "",
+      "command": "click",
+      "target": "css=.address-select:nth-child(4) .filter-input",
+      "targets": [
+        ["css=.address-select:nth-child(4) .filter-input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "63a02119-53db-4f03-9c46-636696316cae",
+      "comment": "",
+      "command": "type",
+      "target": "css=.address-select:nth-child(4) .filter-input",
+      "targets": [
+        ["css=.address-select:nth-child(4) .filter-input", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "pol"
+    }, {
+      "id": "5cc41f49-d83e-428c-8cbb-763a68688a18",
+      "comment": "",
+      "command": "click",
+      "target": "css=.address-select-selected > .css_flag",
+      "targets": [
+        ["css=.address-select-selected > .css_flag", "css:finder"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div/div/div/ul/li[170]/span", "xpath:idRelative"],
+        ["xpath=//li[170]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "799fc71d-f892-479a-a9f8-8204971b21ad",
+      "comment": "",
+      "command": "click",
+      "target": "css=.language-selector > .select-item",
+      "targets": [
+        ["css=.language-selector > .select-item", "css:finder"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[2]/div/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d356be22-e801-4300-bb86-6a0ccfe7bddf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.language-selector .search-currency",
+      "targets": [
+        ["css=.language-selector .search-currency", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dead3d76-3614-48f2-8e3b-e95b5ab3573c",
+      "comment": "",
+      "command": "type",
+      "target": "css=.language-selector .search-currency",
+      "targets": [
+        ["css=.language-selector .search-currency", "css:finder"],
+        ["xpath=(//input[@type='text'])[4]", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "eng"
+    }, {
+      "id": "2ba205e8-f6fb-4a42-a18c-be8e77425061",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(1) > .switcher-item",
+      "targets": [
+        ["css=li:nth-child(1) > .switcher-item", "css:finder"],
+        ["xpath=(//a[contains(text(),'English')])[2]", "xpath:link"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[2]/div/ul/li/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;')])[4]", "xpath:href"],
+        ["xpath=//div[2]/div/ul/li/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e1c1c7c9-707a-4672-bcb9-62a448d5a0cb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.switcher-currency .select-item",
+      "targets": [
+        ["css=.switcher-currency .select-item", "css:finder"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[3]/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/div/div[3]/div/span", "xpath:position"],
+        ["xpath=//span[contains(.,'EUR ( Euro )')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2e0ca2d4-eb49-413d-b9e6-f006c56a1173",
+      "comment": "",
+      "command": "click",
+      "target": "css=.switcher-currency .search-currency",
+      "targets": [
+        ["css=.switcher-currency .search-currency", "css:finder"],
+        ["xpath=(//input[@type='text'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "32856960-fee1-4786-b286-332d7abca993",
+      "comment": "",
+      "command": "type",
+      "target": "css=.switcher-currency .search-currency",
+      "targets": [
+        ["css=.switcher-currency .search-currency", "css:finder"],
+        ["xpath=(//input[@type='text'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[3]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/input", "xpath:position"]
+      ],
+      "value": "eur"
+    }, {
+      "id": "c7a4cf36-7c5e-4267-9793-d7b980846901",
+      "comment": "",
+      "command": "click",
+      "target": "css=.switcher-currency li:nth-child(3) > a",
+      "targets": [
+        ["css=.switcher-currency li:nth-child(3) > a", "css:finder"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[3]/div/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'javascript:;')])[24]", "xpath:href"],
+        ["xpath=//div[4]/div/div/div/div[3]/div/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea4769ed-6ac3-42a7-aaaf-94350103eeb4",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ui-button",
+      "targets": [
+        ["css=.ui-button", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='nav-global']/div[4]/div/div/div/div[4]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "29e2a3ce-45d9-482a-8676-027148f91826",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a6e99165-31a6-4297-85d1-b9e64b54d0c1",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://best.aliexpress.com/"],
+  "plugins": []
+}
