@@ -45,7 +45,7 @@ public class TriangleTest {
     //---------------- double result -----------------------
     @ParameterizedTest(name = "Square with sides: {0}, {1}, {2} = {3}")
     @MethodSource("realItems")
-    void triangleSquareTrueTest(int a, int b, int c, double result) throws TriangleSquareException {
+    void triangleSquareTrueTest(int a, int b, int c, double result) {
         assertEquals(result, tSquare.triangleSquare(a, b, c), 0.01);
     }
 
