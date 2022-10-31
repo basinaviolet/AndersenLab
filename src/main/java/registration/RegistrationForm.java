@@ -1,46 +1,56 @@
 package registration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
+import javax.swing.*;
+import java.sql.SQLOutput;
 import java.util.HashMap;
 
 public class RegistrationForm extends RegBasePage {
 
     public void fillingFields(HashMap<String, String> fieldValues) {
-        driver.findElement(name).click();
-        driver.findElement(name).sendKeys(fieldValues.get("name"));
-        driver.findElement(lastName).click();
-        driver.findElement(lastName).sendKeys(fieldValues.get("lastName"));
+        input(driver.findElement(name), fieldValues.get("name"));
+        input(driver.findElement(lastName), fieldValues.get("lastName"));
+        input(driver.findElement(phoneNumber), fieldValues.get("phoneNumber"));
+        input(driver.findElement(username), fieldValues.get("username"));
+        input(driver.findElement(email), fieldValues.get("email"));
+        input(driver.findElement(about), fieldValues.get("about"));
+        input(driver.findElement(password), fieldValues.get("password"));
+        input(driver.findElement(confirmPassword), fieldValues.get("confirmPassword"));
+
         driver.findElement(maritalStatusMarried).click();
-        driver.findElement(hobby).click();
-        driver.findElement(By.xpath(hobbyItemLocator + "[2]"));
 
-        driver.findElement(country).click();
-        driver.findElement(By.xpath("//option[. = 'India']")).click();
+        select(driver.findElement(hobby), By.xpath(hobbyItemLocator + "[2]"));
+        select(driver.findElement(country), By.xpath("//option[. = 'India']"));
+        select(driver.findElement(dayOfBirth), By.xpath("//option[. = '1']"));
+        select(driver.findElement(monthOfBirth), By.xpath("//option[. = '1']"));
+        select(driver.findElement(yearOfBirth), By.xpath("//option[. = '2014']"));
+    }
 
-        driver.findElement(dayOfBirth).click();
-        driver.findElement(dayOfBirth).findElement(By.xpath("//option[. = '1']")).click();
-        driver.findElement(monthOfBirth).click();
-        driver.findElement(monthOfBirth).findElement(By.xpath("//option[. = '1']")).click();
-        driver.findElement(yearOfBirth).click();
-        driver.findElement(By.xpath("//option[. = '2014']")).click();
+    public void input(WebElement element, String text) {
+        Actions action = new Actions(driver);
+        try {
+            action.moveToElement(element).click()
+                    .sendKeys(text)
+                    .build().perform();
+        } catch (Exception e) {
+            System.out.println("error during execution: input " + text + ": " + e.getMessage());
+        }
 
-        driver.findElement(phoneNumber).click();
-        driver.findElement(phoneNumber).sendKeys(fieldValues.get("phoneNumber"));
+    }
 
-        driver.findElement(username).click();
-        driver.findElement(username).sendKeys(fieldValues.get("username"));
-
-        driver.findElement(email).click();
-        driver.findElement(email).sendKeys(fieldValues.get("email"));
-
-        driver.findElement(about).click();
-        driver.findElement(about).sendKeys(fieldValues.get("about"));
-
-        driver.findElement(password).click();
-        driver.findElement(password).sendKeys(fieldValues.get("password"));
-
-        driver.findElement(confirmPassword).click();
-        driver.findElement(confirmPassword).sendKeys(fieldValues.get("confirmPassword"));
+    public void select(WebElement element, By selectElement) {
+        try {
+            element.click();
+            element.findElement(selectElement).click();
+        } catch (Exception e) {
+            System.out.println("error during execution: select "
+                    + selectElement.toString() + ": "
+                    + e.getMessage());
+            System.out.println("----------------------------");
+        }
     }
 
     public void registration(HashMap<String, String> values) {
@@ -67,7 +77,7 @@ public class RegistrationForm extends RegBasePage {
                 && driver.findElement(confirmPassword).getAttribute("value").equals(values.get("confirmPassword")));
     }
 
-//---------------- assertions --------------------
+    //---------------- assertions --------------------
     public boolean ifMainPage() {
         return (driver.findElement(pageName).getText().equals("Registration")
                 && driver.findElement(pageNameText).getText().equals("Registration Form"));

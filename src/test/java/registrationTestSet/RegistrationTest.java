@@ -34,7 +34,6 @@ public class RegistrationTest extends RegistrationBaseTest {
     }
 
     @Test
-//    @DisplayName("all required fields are filled in correctly")
     void registrationTruePageTitleTest() {
         assertTrue(registrationPage.ifMainPage());
     }
