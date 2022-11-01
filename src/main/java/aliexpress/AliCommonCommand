@@ -1,0 +1,159 @@
+package aliexpress;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Cookie;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Wait;
+
+import static org.openqa.selenium.support.ui.ExpectedConditions.stalenessOf;
+
+public class AliCommonCommand {//} extends AliBasePage {
+////
+////    private WebDriver driver;
+////    private Wait wait;
+//////    private WebDriver driver;
+////
+////    //----------------Setting----------------
+////    By settings = By.id("switcher-info");
+////
+////    By settingsCountry = By.xpath("//a[@data-role='country']");
+////    By settingsCountrySearch = By.xpath("//input[@placeholder='Search']");
+////    By settingsCountryItem = By.xpath("//li[@data-name='Poland']");
+////    String country = "//li[@data-name='";
+////
+////    By settingsLanguage = By.xpath("//span[@data-role='language-input']");
+////    By settingsLanguageItem = By.xpath("//a[@data-locale='en_US']");
+////    String language = "//a[@data-locale='";
+////    By settingCheckLan = By.xpath("//span[@class='language_txt']");
+////    By settingCheckCur = By.xpath("//span[@class='currency']");
+////
+////    By settingsCurrency = By.xpath("//div[@data-role='switch-currency']");
+////    By settingsCurrencyItem = By.xpath("//a[@data-currency='EUR']");
+////    String currency = "//a[@data-currency='";
+////
+////    By uiButton = By.xpath("//button[@data-role='save']");
+////
+////    //----------------Search----------------
+////    By searchKey = By.id("search-key");
+////    By searchButton = By.xpath("//input[@class='search-button']");
+////    By searchElement = By.xpath("//h1[contains(text(),'650ml Infuser')]");
+////
+////    //----------------Cookies----------------
+////    By cookies = By.xpath("//button[@data-role='gdpr-accept']");
+////
+////    //----------------Categories----------------
+////    By categoryCurrentAria = By.xpath("//span[@aria-current='page']//span");
+////
+////    //------------------------------------------
+////
+//////    public AliCommonForm(WebDriver driver) {
+//////        this.driver = driver;
+//////    }
+////
+////    //-----------------------------------------
+////
+////    public AliCommonPage(WebDriver driver, Wait wait) {
+////        this.driver = driver;
+////        this.wait = wait;
+////    }
+//
+////    public T setSettings(T page, WebDriver driver, String setCountry, String setLanguage, String setCurrency) {
+////        cookies(driver);
+////  //      System.out.println("cookies: " + driver.manage().getCookies().toString());
+////        System.out.println("cookies1: " + driver.manage().getCookieNamed("intl_locale")
+//////                + "->" + driver.manage().getCookieNamed("c_tp")
+//////                + "->" + driver.manage().getCookieNamed("region")
+////        );
+////        clickElement(settings);
+////        clickElement(settingsCountry);
+////        clickElement(By.xpath(country + setCountry + "']"));
+////        clickElement(settingsLanguage);
+////        clickElement(By.xpath(language + setLanguage + "']"));
+////        clickElement(settingsCurrency);
+////        clickElement(By.xpath(currency + setCurrency + "']"));
+////        clickElement(uiButton);
+////
+////        wait.until(stalenessOf(driver.findElement(searchButton)));
+////
+////  //      System.out.println("cookies: " + driver.manage().getCookies().toString());
+////        System.out.println("cookies2: " + driver.manage().getCookieNamed("intl_locale")
+//////                + "->" + driver.manage().getCookieNamed("c_tp")
+//////                + "->" + driver.manage().getCookieNamed("region")
+////        );
+////return T;
+////    }
+//
+////    public void setCookies(){
+////        driver.manage().addCookie(new Cookie("intl_locale", "en_US"));// .getCookieNamed("intl_locale")
+////    }
+//
+////    public WebDriver search(WebDriver driver) {
+////        cookies();
+////        driver.findElement(searchKey).click();
+////        driver.findElement(searchKey).sendKeys("650ml infuser water bottle plastic lemon kettle");
+////        driver.findElement(searchButton).click();
+////        wait.until(ExpectedConditions.urlContains("/wholesale"));
+////
+////        List<WebElement> elements = driver.findElements(searchElement);
+////        if (elements.size() > 0)
+////            driver.findElement(searchElement).click();
+////
+////        return AliProductForm
+////    }
+////
+////    public void cookies(WebDriver driver) {
+////        try {
+////            if (driver.findElement(cookies).isDisplayed())
+////                driver.findElement(cookies).click();
+////        } catch (Exception e) {
+////        }
+////    }
+//
+//    public void clickElement(By element) {
+//     driver.findElement(element).click();
+//    }
+//
+//    //---------------- assertions --------------------
+//
+////    public boolean checkCurrentAria(String currentAria) {
+//////        System.out.println("text: " + driver.findElement(categoryCurrentAria)
+//////                .getText().toLowerCase() +
+//////                "->" + currentAria.toLowerCase()
+//////        );
+////        return driver.findElement(categoryCurrentAria).getText().toLowerCase().contains(currentAria.toLowerCase());
+////    }
+//
+//    public boolean checkSettings(WebDriver driver, String languageForCheck, String currencyForCheck) {
+//        return (driver.findElement(settingCheckLan).getText().equals(languageForCheck)
+//                && driver.findElement(settingCheckCur).getText().equals(currencyForCheck));
+//    }
+//
+////    public boolean checkSearch() {
+////        try {
+////            driver.findElements(searchElement);
+////            return true;
+////        } catch (Exception e) {
+////            return false;
+////        }
+////    }
+
+//-----------------------------------------------
+
+    public void clickElement(WebDriver driver, By element) {
+        driver.findElement(element).click();
+    }
+
+    public void input(WebDriver driver, By element, String text) {
+        Actions action = new Actions(driver);
+        try {
+            action.moveToElement(driver.findElement(element)).click()
+                    .sendKeys(text)
+                    .build().perform();
+        } catch (Exception e) {
+            System.out.println("error during execution: input " + text + ": " + e.getMessage());
+        }
+    }
+}
