@@ -5,26 +5,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 
-public class AliCartPage{
+public class AliCartPage {
 
     private final WebDriver driver;
     private final Wait wait;
     private final AliCommonCommand command;
 
-    //----------------Cookies----------------
-    By cookies = By.xpath("//button[@data-role='gdpr-accept']");
-
     //----------------Cart----------------
-    By addToCartButton = By.xpath("//div[@class='product-action']//button[@ae_button_type='addtocart_click']");
-    By addToCartItem = By.xpath("//li[@class='sku-property-item']");
-
-    By viewShoppingCart = By.xpath("//button[@ae_button_type='View_shopping_cart']");
-    By cartItemContainer = By.xpath("//div[@class='cart-product-wrap']");
-
     By cartItemList = By.xpath("//div[@class='cart-product-wrap']");
     By cartItem = By.xpath("//div[@class='cart-product-name']//a");
-
-    By dialogWindow = By.xpath("//div[@role='dialog']");
 
     //------------------------------------------
 

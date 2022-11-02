@@ -83,8 +83,8 @@ public class AliMainPage {
         }
     }
 
-    public AliProductPage search() {
-        command.input(searchKey, "650ml infuser water bottle plastic lemon kettle");
+    public AliProductPage search(String str) {
+        command.input(searchKey, str);
         command.clickElement(searchButton);
 
         wait.until(ExpectedConditions.urlContains("/wholesale"));
@@ -118,22 +118,9 @@ public class AliMainPage {
     }
 
     //---------------- assertions --------------------
-
-//    public boolean checkCurrentAria(WebDriver driver, String currentAria) {
-//        return driver.findElement(categoryCurrentAria).getText().toLowerCase().contains(currentAria.toLowerCase());
-//    }
     public boolean checkSettings(String languageForCheck, String currencyForCheck) {
         return (driver.findElement(settingCheckLan).getText().equals(languageForCheck)
                 && driver.findElement(settingCheckCur).getText().equals(currencyForCheck));
-    }
-
-    public boolean checkSearch(WebDriver driver) {
-        try {
-            driver.findElements(searchElement);
-            return true;
-        } catch (Exception e) {
-            return false;
-        }
     }
 //-----------------------------------------------
 }

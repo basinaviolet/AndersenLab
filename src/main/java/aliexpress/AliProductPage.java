@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Wait;
 
-public class AliProductPage{
+public class AliProductPage {
 
     private final WebDriver driver;
     private final Wait wait;
@@ -16,14 +16,7 @@ public class AliProductPage{
 
     //----------------Cart----------------
     By addToCartButton = By.xpath("//div[@class='product-action']//button[@ae_button_type='addtocart_click']");
-    By addToCartItem = By.xpath("//li[@class='sku-property-item']");
-
     By viewShoppingCart = By.xpath("//button[@ae_button_type='View_shopping_cart']");
-    By cartItemContainer = By.xpath("//div[@class='cart-product-wrap']");
-
-    By cartItemList = By.xpath("//div[@class='cart-product-wrap']");
-    By cartItem = By.xpath("//div[@class='cart-product-name']//a");
-
     By dialogWindow = By.xpath("//div[@role='dialog']");
 
     //----------------Categories----------------
@@ -47,6 +40,7 @@ public class AliProductPage{
         wait.until(ExpectedConditions.elementToBeClickable(driver.findElement(viewShoppingCart)));
         command.clickElement(viewShoppingCart);
 
+        wait.until(ExpectedConditions.urlContains("/shoppingcart"));
         return new AliCartPage(driver, wait);
     }
 
